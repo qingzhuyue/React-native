@@ -2,7 +2,7 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-06-20 20:11:31
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-10-26 22:04:41
+ * @LastEditTime: 2024-10-27 23:54:55
  * @FilePath: /RN/App.tsx
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
@@ -16,6 +16,7 @@
 
 import React from 'react';
 import {
+  Button,
   SafeAreaView,
 } from 'react-native';
 
@@ -32,8 +33,17 @@ function App(): React.JSX.Element {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-          {/* <Stack.Screen name=" " component={HomeScreen} /> */}
-          <Stack.Screen name=" " component={LoginScreen} />
+        {/* <Stack.Screen name=" " component={HomeScreen} /> */}
+        <Stack.Screen name=" " component={LoginScreen}
+          options={{
+            headerShown: false
+            // headerRight: () => (
+            //   <Button
+            //     title="Add"
+            //     onPress={() => console.log('Add button pressed')}
+            //   />
+            // ),
+          }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

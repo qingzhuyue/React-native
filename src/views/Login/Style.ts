@@ -2,7 +2,7 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-10-26 22:00:33
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-10-26 23:57:45
+ * @LastEditTime: 2024-10-27 23:45:44
  * @FilePath: /RN/src/views/Login/Style.ts
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
@@ -13,10 +13,11 @@ import { StyleSheet } from "react-native";
 export const LoginStyle = StyleSheet.create({
   container: {
     flex: 1,
+    display: "flex",
     justifyContent: "center",
-    alignContent: "center",
+    alignItems: "center",
     backgroundColor: "#f0f0f0",
-    padding: 20
+    padding: 20,
   },
   title: {
     fontSize: 24,
@@ -26,16 +27,14 @@ export const LoginStyle = StyleSheet.create({
   },
   input: {
     width: '80%',
+    height: 40,
     padding: 10,
-    marginVertical: 10,
+    marginBottom: 10,
     backgroundColor: '#fff',
-    borderColor: 'red',
-    borderWidth: 1,
-    borderRadius: 4,
   },
   button: {
     width: '80%',
     borderRadius: 10,
-    borderWidth:1
+    marginTop:20
   }
 })

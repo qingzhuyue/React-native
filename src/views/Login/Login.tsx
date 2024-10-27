@@ -2,7 +2,7 @@
  * @Author: qingzhuyue qingzhuyue@foxmail.com
  * @Date: 2024-10-26 21:57:19
  * @LastEditors: qingzhuyue qingzhuyue@foxmail.com
- * @LastEditTime: 2024-10-26 23:56:43
+ * @LastEditTime: 2024-10-27 23:46:20
  * @FilePath: /RN/src/views/Login/Login.tsx
  * @Description: 
  * Copyright (c) 2024 by ${qingzhuyue} email: ${qingzhuyue@foxmail.com}, All Rights Reserved.
@@ -35,10 +35,12 @@ function Login() {
       onChangeText={setPassWord}
       secureTextEntry={true}
       style={LoginStyle.input} />
-    <Button
-      title="登录"
-      onPress={handleLogin}
-      {...LoginStyle.button} />
+    <View style={LoginStyle.button}>
+      <Button
+        title="登录/注册"
+        onPress={handleLogin} />
+    </View>
+
   </View>
 }
 
